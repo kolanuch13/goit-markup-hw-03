@@ -96,7 +96,7 @@ ul {
 .header-container {
     display: flex;
     align-items: center;
-    
+    align-content: center;
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid var(--border-color);
@@ -104,6 +104,7 @@ ul {
 
 .header-nav {
     display: flex;
+    align-content: center;
     align-items: center;
     column-gap: 90px;
     margin-right: 344px;
@@ -112,6 +113,7 @@ ul {
 
 .header-list {
     display: flex;
+    align-content: center;
     align-items: center;
     column-gap: 50px;
 }
@@ -285,10 +287,16 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-item-name {
+.team-item-card {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
     margin-top: 30px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.team-item-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -297,8 +305,6 @@ ul {
 }
 
 .team-item-position {
-    margin-bottom: 30px;
-
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -353,15 +359,20 @@ ul {
     border: 1px solid var(--filter-color);
 }
 
+.project-item-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 0 20px 24px;
+    gap: 4px;
+}
+
 .project-item-image {
     margin-top: -1px;
     margin-left: -1px;
 }
 
 .project-item-name {
-    margin-top: 20px;
-    margin-left: 24px;
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -369,9 +380,6 @@ ul {
 }
 
 .project-item-descript {
-    margin-bottom: 20px;
-    margin-left: 24px;
-
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
